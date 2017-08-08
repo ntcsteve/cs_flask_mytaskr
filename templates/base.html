@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyTaskr</title>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "page">
+
+            <!-- Flash messages -->
+            {% for message in get_flashed_messages() %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+
+            <!-- Template Inheritance -->
+            {% block content %}
+            
+            {% endblock %}
+            <!-- base.html is the parent template -->
+            <!-- Flask uses Jinja2 as its templating engine -->
+
+        </div>
+    </body>
+</html>
+
+
